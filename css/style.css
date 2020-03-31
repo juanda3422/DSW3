@@ -1,0 +1,200 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Calibri, sans-serif;
+    font-size: 14pt;
+}
+
+/* ENCABEZADO ---------------------*/
+header{
+    position: absolute;
+    background-image: url("../img/encabezado.png");
+    background-color: #000;
+    background-repeat: no-repeat;
+    width: 100%;
+    top: 0px;
+    bottom: 0px;
+}
+
+/* LOGO ---------------------------*/
+header .logo{
+    background-image: url("../img/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 10px;
+}
+header h1{
+    font-size: 20pt;
+    margin: 2px 0px 2px 70px;
+    color: #F0B429;
+}
+
+/* BOTON MENU ---------------------*/
+#chkMenu{
+    display: none;
+}
+#btnMenu{
+    border: solid 2px #AAA;
+    border-radius: 5px;
+    background-color: #005883;
+    color: #fff;
+    padding: 3px 15px;
+    font-size: 20pt;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+#btnMenu:hover{
+    cursor: pointer;
+    background-color: #A54686;
+}
+#chkMenu:checked ~ nav {
+    display: inline;
+}
+
+/* OPCIONES MENU ------------------*/
+nav {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top:70px;
+    bottom: 0px;
+    left: 0px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+nav ul{
+    list-style: none;
+    width: 100%;
+}
+nav a{
+    cursor: pointer;
+    display: block;
+    background-color: #A54686;
+    border: solid 1px #005883;
+    color: #FFF;
+    font-weight: bold;
+    padding: 8px 50px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 18pt;
+}
+nav a:hover{
+    background-color: #005883;
+}
+nav > ul > li > a{
+    padding: 8px 15px;
+}
+
+/* CONTENIDO ----------------------*/
+.content{
+    background-color: #EEE;
+    border: solid 1px #005883;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    right: 0px;
+    bottom: 30px;
+    overflow-y: auto;
+}
+section{
+    padding: 10px;
+}
+section h1{
+    font-size: 28pt;
+    color: #005883;
+}
+
+/* PIE DE PAGINA ------------------*/
+footer{
+    bottom: 0px;
+    background-color:#022468;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+}
+footer p{
+    margin: 0px 10px;
+    line-height: 30px;
+    color: #fff;
+}
+footer a{
+    color: #F0B429;
+    font-weight: bold;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #F0C400;
+}
+footer a.lnkAutores::after{
+    content: " - 301122A_761";
+}
+
+/* INTERMEDIA ---------------------*/
+@media only screen and (min-width: 680px) {
+
+    #btnMenu{
+        display: none;
+    }
+    nav {
+        display: block;
+        top:30px;
+        width: unset;
+        left: unset;
+        bottom: unset;
+        overflow-y: unset;
+        right: 0;
+    }
+    nav ul {
+        width: unset;
+    }
+    nav > ul > li {
+        float: left;
+    }
+    nav a{
+        display: block;
+        background-color: #A54686;
+        border: none;
+        font-weight: normal;
+        padding: 6px 10px;
+        width: 114px;
+        font-size: 12pt;
+    }
+    nav > ul > li > a{
+        text-align: center;
+        background-color: #005883;
+        padding: 8px;
+        margin: 2px;
+        width: 80px;
+    }
+    nav > ul > li > a:hover{
+        background-color: #A54686;
+    }
+    nav li ul{
+        display: none;
+        position: absolute;
+    }
+    nav li:hover > ul{
+        display: block;
+    }
+    nav > ul::after{
+        content: "";
+        display: list-item;
+        float: left;
+        margin: 2px;
+        background-color: #005883;
+        height: 35px;
+        width: 30px;
+    }
+    section{
+        padding: 10px 40px;
+    }
+    footer p, footer a{
+        font-size: 12pt;
+    }
+    footer a.lnkAutores::after{
+        content: " Curso 301122 Diseños de Sitios Web, Periodo 16-01 2020";
+    }
+}
