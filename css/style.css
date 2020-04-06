@@ -47,7 +47,7 @@ header h1{
 }
 #btnMenu:hover{
     cursor: pointer;
-    background-color: #A54686;
+    background-color: #F47920;
 }
 #chkMenu:checked ~ nav {
     display: inline;
@@ -71,7 +71,7 @@ nav ul{
 nav a{
     cursor: pointer;
     display: block;
-    background-color: #A54686;
+    background-color: #F47920;
     border: solid 1px #005883;
     color: #FFF;
     font-weight: bold;
@@ -159,7 +159,7 @@ footer a.lnkAutores::after{
     }
     nav a{
         display: block;
-        background-color: #A54686;
+        background-color: #F47920;
         border: none;
         font-weight: normal;
         padding: 6px 10px;
@@ -174,7 +174,7 @@ footer a.lnkAutores::after{
         width: 80px;
     }
     nav > ul > li > a:hover{
-        background-color: #A54686;
+        background-color: #F47920;
     }
     nav li ul{
         display: none;
