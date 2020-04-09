@@ -97,12 +97,13 @@ nav > ul > li > a{
     right: 0px;
     bottom: 30px;
     overflow-y: auto;
+   
 }
 section{
     padding: 10px;
 }
 section h1{
-    font-size: 28pt;
+    font-size: 30pt;
     color: #005883;
 }
 .asideTwitter{
