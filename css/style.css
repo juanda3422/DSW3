@@ -116,6 +116,7 @@ section p{
 section li{
     margin-left: 20px;
     padding-left: 10px;
+    text-align: left;
 }
 section > .pnlvideo{
     width: 100%;
@@ -193,7 +194,7 @@ footer a#lnkAutores::after{
         border: none;
         font-weight: normal;
         padding: 6px 10px;
-        width: 160px;
+        width: 180px;
         font-size: 12pt;
     }
     nav > ul > li > a{
