@@ -101,6 +101,7 @@ nav > ul > li > a{
 }
 section{
     padding: 10px;
+    text-align: center;
 }
 section h1{
     text-align: center;
