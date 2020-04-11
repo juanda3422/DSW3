@@ -116,6 +116,12 @@ section li{
     margin-left: 20px;
     padding-left: 10px;
 }
+section > .pnlvideo{
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    background-color: #000;
+}
 
 aside{
     height: 100%;
